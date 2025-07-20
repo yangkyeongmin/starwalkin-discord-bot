@@ -4,7 +4,6 @@ services:
     env: node
     plan: free
     branch: main
-    rootDir: .
-    buildCommand: cd discord-bot && npm install
-    startCommand: cd discord-bot && node index.js
+    buildCommand: npm install
+    startCommand: node index.js
     autoDeploy: true
