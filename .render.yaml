@@ -4,7 +4,7 @@ services:
     env: node
     plan: free
     branch: main
-    rootDir: discord-bot        # ✅ 폴더 경로 추가!
+    rootDir: .         # ✅ 여기가 핵심
     buildCommand: npm install
     startCommand: node index.js
     autoDeploy: true
