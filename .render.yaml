@@ -4,7 +4,7 @@ services:
     env: node
     plan: free
     branch: main
-    rootDir: .         # ✅ 여기가 핵심
-    buildCommand: npm install
-    startCommand: node index.js
+    rootDir: .
+    buildCommand: cd discord-bot && npm install
+    startCommand: cd discord-bot && node index.js
     autoDeploy: true
