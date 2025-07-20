@@ -1,9 +1,8 @@
 services:
   - type: web
-    name: starwalkin-bot
+    name: discord-bot
     env: node
     plan: free
-    branch: main
     buildCommand: npm install
     startCommand: node index.js
-    autoDeploy: true
+    rootDir: .
