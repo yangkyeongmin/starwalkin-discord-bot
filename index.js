@@ -43,4 +43,11 @@ client.once('ready', () => {
   });
 });
 
+// Render용 포트 바인딩 우회 (Render는 포트 열려 있어야 작동)
+require('http').createServer((req, res) => {
+  res.writeHead(200);
+  res.end('Bot is running!');
+}).listen(process.env.PORT || 3000);
+
+
 client.login(process.env.TOKEN);
